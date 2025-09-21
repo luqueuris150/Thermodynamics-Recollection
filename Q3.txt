@@ -1,0 +1,150 @@
+1. Primeiramente, vamos rearrumar a equação para S(U):
+
+S = \left[{\left(\frac{R^2}{\nu_0 \theta}\right) U V N\right]^{\frac{1}{3}}
+
+Podemos ver que a entropia S satisfaz o primeiro e o segundo postulado da termodinâmica, pois S é completamente caracterizado pela energia interna U, pelo volume V e pela quantidade de matéria N do sistema, ou seja: S = S(U,V,N).
+
+Fica cláro que seja U_f > U_i, então S_f > S_i, portanto S é monotonicamente crescente e satisfaz o terceiro postulado, além de que: 
+
+S (\lambda U, \lambda V, \lambda N) = \left[{\left(\frac{R^2}{\nu_0 \theta}\right) \lambda^3 U  V  N\right]^{\frac{1}{3}} = \lambda S
+
+E, portanto, S satisfaz o terceiro postulado. Notemos que:
+
+\frac{\partial U}{\partial S} = \left( \frac{\nu_0 \theta}{R^2} \right) \frac{3 S^2}{V N}
+
+Que, a V e N constantes, só zera se S = 0. Isso implica também a volta: Quando \frac{\partial U}{\partial S} = 0 \to S = 0, portanto o quarto postulado também é satisfeito, logo S é uma equação fundamental que caracteriza estados de equilíbrio do sistema.
+
+2. Primeiramente, vamos obter as relações de Euler:
+
+U (\lambda S, \lambda V, \lambda N) = \lambda U (S, V, N)
+
+Derivando em relação a \lambda, temos:
+
+\frac{\partial U}{\partial \lambda} (\lambda S, \lambda V, \lambda N) = \frac{\partial U}{\partial (\lambda S)} \frac{\partial (\lambda S)}{\partial \lambda} + \frac{\partial U}{\partial (\lambda V)} \frac{\partial (\lambda V)}{\partial \lambda} + \frac{\partial U}{\partial (\lambda N)} \frac{\partial (\lambda N)}{\partial \lambda} = \frac{\partial \lambda U}{\partial \lambda} (S, V, N)
+
+\frac{\partial U}{\partial (\lambda S)} S + \frac{\partial U}{\partial (\lambda V)} V + \frac{\partial U}{\partial (\lambda N)} N = U
+
+Se fizermos \lambda = 1, temos:
+
+\frac{\partial U}{\partial S} S + \frac{\partial U}{\partial V} V + \frac{\partial U}{\partial N} N = U
+
+Ou seja:
+
+T S - p V + \mu N = U
+
+Diferenciando, ou seja, pegando uma variação de energia muito pequena, temos:
+
+dU = T dS + S dT - p dV - V dp + \mu dN + N d\mu
+
+Mas sabemos que:
+
+dU = T dS - p dV + \mu dN = \left( \frac{\partial U}{\partial S} \right)_{N, V} dS + \left( \frac{\partial U}{\partial V} \right)_{S, N} dV + \left( \frac{\partial U}{\partial N} \right)_{S, V} dN
+
+Portanto:
+
+S dT - V dp + N d\mu = 0 \to d \mu = \frac{S}{N} dT - \frac{V}{N} dp
+
+d \mu = s dT - v dp
+
+Vamos começar a escrever as equações de estado, então. A começar por:
+
+T (S, V, N) = \left( \frac{\partial U}{\partial S} \right)_{N, V} = \left( \frac{\nu_0 \theta}{R^2} \right) \frac{3 S^2}{V N} = \left( \frac{\partial U}{\partial S} \right)_{N, V} = \left( \frac{\nu_0 \theta}{R^2} \right) \frac{3 N s^2}{V}
+
+T (s, v) = \left( \frac{\partial U}{\partial S} \right)_{N, V} = \left( \frac{\nu_0 \theta}{R^2} \right) \frac{3 s^2}{v}
+
+E:
+
+p (S, V, N) = - \left( \frac{\partial U}{\partial V} \right)_{S, N} = \left( \frac{\nu_0 \theta}{R^2} \right) \frac{S^3}{V^{2} N}
+
+p (s, v) = \left( \frac{\nu_0 \theta}{R^2} \right) \frac{s^3}{v^{2}}
+
+Por fim:
+
+\mu (S, V, N) = \left( \frac{\partial U}{\partial N} \right)_{S, V} = - \left( \frac{\nu_0 \theta}{R^2} \right) \frac{S^3}{V N^2}
+
+\mu (s, v) = - \left( \frac{\nu_0 \theta}{R^2} \right) \frac{s^3}{v}
+
+Agora notemos que:
+
+T (\lambda S, \lambda V, \lambda N) = 3 \left( \frac{\nu_0 \theta}{R^2} \right) \frac{\lambda^2 S^2}{(\lambda V) (\lambda N)} = 3 \left( \frac{\nu_0 \theta}{R^2} \right) \frac{\lambda^2 S^2}{\lambda^2 V N} = 3 \left( \frac{\nu_0 \theta}{R^2} \right) \frac{S^2}{V N}
+
+T (\lambda S, \lambda V, \lambda N) = T (S, V, N) = \lambda^0 T (S, V, N)
+
+Por sua vez, temos:
+
+p (\lambda S, \lambda V, \lambda N) = \left( \frac{\nu_0 \theta}{R^2} \right) \frac{\lambda^3 S^3}{(\lambda V)^{2} \lambda N} = \left( \frac{\nu_0 \theta}{R^2} \right) \frac{\lambda^3 S^3}{\lambda^2 V^{2} \lambda N}
+
+p (\lambda S, \lambda V, \lambda N) = \left( \frac{\nu_0 \theta}{R^2} \right) \frac{\lambda^3 S^3}{\lambda^3 V^{2} N} = \left( \frac{\nu_0 \theta}{R^2} \right) \frac{S^3}{V^{2} N}
+
+p (\lambda S, \lambda V, \lambda N) = p (S, V, N) = \lambda^0 p (S, V, N)
+
+E, por fim:
+
+\mu (\lambda S, \lambda V, \lambda N) = - \left( \frac{\nu_0 \theta}{R^2} \right) \frac{\lambda^3 S^3}{\lambda V (\lambda N)^2} = - \left( \frac{\nu_0 \theta}{R^2} \right) \frac{\lambda^3 S^3}{\lambda V \lambda^2 N^2}
+
+\mu (\lambda S, \lambda V, \lambda N) = - \left( \frac{\nu_0 \theta}{R^2} \right) \frac{\lambda^3 S^3}{\lambda^3 V N^2} = - \left( \frac{\nu_0 \theta}{R^2} \right) \frac{S^3}{V N^2}
+
+\mu (\lambda S, \lambda V, \lambda N) = \mu (S, V, N) = \lambda^0 \mu (S, V, N)
+
+Ou seja, T, p e \mu são funções homogêneas de ordem 0 e portanto são intensivas.
+
+3. No ponto anterior, mostramos que:
+
+d \mu = \frac{S}{N} dT - \frac{V}{N} dp
+
+Usando as equações de estado, podemos ver que:
+
+T (S, V, N) = 3 \left( \frac{\nu_0 \theta}{R^2} \right) \frac{S^2}{V N}
+
+S (T, V, N) = \left( \frac{R^2}{3 \nu_0 \theta} \right)^{\frac{1}{2}} \sqrt{T V N}
+
+E:
+
+p (S, V, N) = \left( \frac{\nu_0 \theta}{R^2} \right) \frac{S^3}{V^{2} N}
+
+V (S, p, N) = \left( \frac{\nu_0 \theta}{R^2} \right)^{\frac{1}{2}} \sqrt{\frac{S^3}{p N}}
+
+Podemos substituir S e V uma na outra, obtendo:
+
+V (T, p, N) = \left( \frac{\nu_0 \theta}{R^2} \right)^{\frac{1}{2}} \sqrt{\frac{1}{p N}} \left[ \left( \frac{R^2}{3 \nu_0 \theta} \right)^{\frac{1}{2}} \sqrt{T V N} \right]^{3/2}
+
+V^2 = \left( \frac{\nu_0 \theta}{R^2} \right) \sqrt{\frac{1}{p N}} \left[ \left( \frac{R^2}{3 \nu_0 \theta} \right)^{\frac{1}{2}} \sqrt{T V N} \right]^{2} \left[ \left( \frac{R^2}{3 \nu_0 \theta} \right)^{\frac{1}{2}} \sqrt{T V N} \right]
+
+V^2 = \left( \frac{R^2}{3 \nu_0 \theta} \right)^{\frac{1}{2}} \sqrt{\frac{1}{p N}} \left[ \sqrt{3 T V N} \right]^{3}
+
+V^2 = \left( \frac{R^2}{3 \nu_0 \theta} \right)^{\frac{1}{2}} \sqrt{\frac{1}{p N}} \left[3 T V N \right]^{3/2}
+
+V = \left( \frac{R^2}{\nu_0 \theta} \right) \sqrt{\frac{9 T^3 N^3}{p^2 N^2}}
+
+V (T, p, N) = \left( \frac{9 R^2}{\nu_0 \theta} \right) \sqrt{\frac{T^3 N}{p^2}}
+
+Por sua vez, temos:
+
+S (T, V, N) = \left( \frac{R^2}{3 \nu_0 \theta} \right)^{\frac{1}{2}} \sqrt{T N} \left[ \left( \frac{9 R^2}{\nu_0 \theta} \right) \sqrt{\frac{T^3 N}{p^2}} \right]^{\frac{1}{2}}
+
+S (T, p, N) = \left( \frac{R^2}{\nu_0 \theta} \right) \left[9 \frac{T^5 N^3}{p^2}\right]^{\frac{1}{4}}
+
+Por fim, podemos achar \mu (T, V, N) substituindo S (T, V, N) em \mu (S, V, N).
+
+\mu (T, V, N) = - \left( \frac{\nu_0 \theta}{R^2} \right) \frac{1}{V N^2} \left[\left( \frac{R^2}{3 \nu_0 \theta} \right)^{\frac{1}{2}} \sqrt{T V N}\right]^{3}
+
+\mu (T, V, N) = - \left( \frac{R^2}{3 \nu_0 \theta} \right)^{\frac{1}{2}} \sqrt{\frac{T^3 V}{9 N}}
+
+4. Achamos antes que:
+
+V (T, p, N) = \left( \frac{9 R^2}{\nu_0 \theta} \right) \sqrt{\frac{T^3 N}{p^2}}
+
+Vamos invertê-la para:
+
+p (T, V, N) = \left( \frac{9 R^2}{\nu_0 \theta} \right) \sqrt{\frac{T^3 N}{V^2}}
+
+E agora, vamos considerar N = 1 e:
+
+\left( \frac{9 R^2}{\nu_0 \theta} \right) = 1
+
+Portanto, ficamos com:
+
+p (T, V, N) = \sqrt{\frac{T^3}{V^2}}
+
+E assim, podemos obter as isotermas:
+

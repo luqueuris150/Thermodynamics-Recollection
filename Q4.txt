@@ -1,0 +1,55 @@
+O coeficiente de expansão \alpha é definido como:
+
+\alpha = \frac{1}{V} \left(\frac{\partial V}{\partial T} \right)_{P, N}
+
+Nos é dado que a equação de Estado de Van der Waals é:
+
+P = \frac{NRT}{V - bN} - \frac{N^2 a}{V^2}
+
+Reorganizando, temos:
+
+T = \frac{(V - bN)}{NR} \left(P + \frac{N^2 a}{V^2}\right)
+
+Pelo teorema da função inversa para diferenciais exatos temos que:
+
+\frac{\partial V}{\partial T} = \left(\frac{\partial T}{\partial V}\right)^{-1}
+
+Assim, podemos fazer:
+
+\frac{\partial T}{\partial V} = \frac{1}{NR} \left(P + \frac{N^2 a}{V^2}\right) + \frac{(V - bN)}{NR} \left(- 2 \frac{N^2 a}{V^3}\right)
+
+\frac{\partial T}{\partial V} = \frac{1}{NR} \left[P + \frac{N^2 a}{V^2} - 2 \frac{(V - bN) N^2 a}{V^3}  \right]
+
+\frac{\partial T}{\partial V} = \frac{1}{NR} \left\{P + \frac{N^2 a}{V^2} \left[1 - 2 \frac{(V - bN)}{V} \right] \right\}
+
+Ou seja:
+
+\frac{\partial V}{\partial T} = N R \frac{1}{\left\{P + \frac{N^2 a}{V^2} \left[1 - 2 \frac{(V - bN)}{V} \right] \right\}}
+
+\frac{\partial V}{\partial T} = N R \frac{V^3}{\left\{P V^3 + N^2 a \left[V - 2(V - bN)  \right] \right\}}
+
+\frac{\partial V}{\partial T} = N R \frac{V^3}{P V^3 + N^2 a \left(b N - V\right)}
+
+Por fim:
+
+\alpha = \frac{1}{V} \left[ N R \frac{V^3}{P V^3 + N^2 a \left(b N - V\right)} \right]
+
+\alpha = N R \frac{V^2}{P V^3 + N^2 a \left(b N - V\right)}
+
+Agora precisamos encontrar a compressibilidade isotérmica, que é definida como:
+
+k_T = - \frac{1}{V} \left(\frac{\partial V}{\partial P} \right)_{T, N}
+
+k_T = - \frac{1}{V} \left(\frac{\partial V}{\partial T} \frac{\partial T}{\partial P} \right)_{T, N}
+
+Já sabemos quem é \frac{\partial V}{\partial T}. Precisamos achar então \frac{\partial T}{\partial P} que é trivial:
+
+\frac{\partial T}{\partial P} = \frac{(V - bN)}{NR}
+
+Portanto:
+
+k_T = - \frac{1}{V} \left[N R \frac{V^3}{P V^3 + N^2 a \left(b N - V\right)} \frac{(V - bN)}{NR} \right]_{T, N}
+
+k_T = - \frac{V^2 (V - bN) }{P V^3 + N^2 a \left(b N - V\right)}
+
+Como a questão nos pede para demonstrar. \qed
